@@ -7,10 +7,7 @@ import bg3 from '../assets/bg3.jpg';
 
 
 export function Experience(props) {
-
-  const texture1 = useTexture(bg1)
-  const texture2 = useTexture(bg2)
-  const texture3 = useTexture(bg3)
+  const [texture1, texture2, texture3] = useTexture([bg1, bg2, bg3])
   
  
   return (
