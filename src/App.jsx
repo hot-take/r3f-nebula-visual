@@ -167,7 +167,7 @@ function App() {
    
       <Stars radius={100} depth={500} count={1000} factor={2}  fade={true} speed={1.5} />
       
-       <EffectComposer>
+       <EffectComposer disableNormalPass>
       <Bloom
        intensity={1} 
        luminanceThreshold={0.2} 

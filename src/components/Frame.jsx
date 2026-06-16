@@ -68,10 +68,10 @@ const Frame = (props) => {
           geometry={nodes.Mesh_1.geometry}
           material={materials.FACE}
         >
-          <MeshPortalMaterial  side={THREE.DoubleSide}>
+          <MeshPortalMaterial  side={THREE.DoubleSide} resolution={512}>
           <mesh rotation={[4.6, 3.2,0]} scale={[1, 0.7, 1]}>
           <ambientLight/>
-            <sphereGeometry args={[8, 64, 64]} />
+            <sphereGeometry args={[8, 32, 32]} />
             <MeshDistortMaterial ref={distortref}   speed={2} map={texture} />
           </mesh> 
           </MeshPortalMaterial>
