@@ -1,13 +1,16 @@
 import { useTexture } from "@react-three/drei";
 import Frame from './Frame';
+import bg1 from '../assets/bg1.jpg';
+import bg2 from '../assets/bg2.jpg';
+import bg3 from '../assets/bg3.jpg';
 
 
 
 export function Experience(props) {
 
-  const texture1 = useTexture("src/assets/bg1.jpg")
-  const texture2 = useTexture("src/assets/bg2.jpg")
-  const texture3 = useTexture("src/assets/bg3.jpg")
+  const texture1 = useTexture(bg1)
+  const texture2 = useTexture(bg2)
+  const texture3 = useTexture(bg3)
   
  
   return (

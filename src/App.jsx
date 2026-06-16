@@ -4,6 +4,9 @@ import { Cloud, OrbitControls, Stars } from "@react-three/drei"
 import Experience from './components/Experience'
 import { Bloom, EffectComposer, Vignette } from '@react-three/postprocessing'
 import { gsap } from 'gsap'
+import nebula1 from './assets/nebula.png'
+import nebula2 from './assets/nebula2.png'
+import nebula3 from './assets/nebula3.png'
 
 
 
@@ -109,7 +112,7 @@ function App() {
                 depth={0.2}
                 color={"#FFFFFF"}
                 segments={20}
-                texture='src/assets/nebula.png'
+                texture={nebula1}
             />
             {/* <Cloud
                 position={[0,7,-25]}
@@ -118,7 +121,7 @@ function App() {
                 width={6}
                 depth={1}
                 color={"#FFFFFF"}
-                texture='src/assets/nebula2.png'
+                texture={nebula2}
             /> */}
             <Cloud
                 position={[0,7,-25]}
@@ -127,7 +130,7 @@ function App() {
                 width={6}
                 depth={1}
                 color={"#FFFFFF"}
-                texture='src/assets/nebula3.png'
+                texture={nebula3}
             />
               <Cloud
                 position={[6,-4,-20]}
@@ -137,7 +140,7 @@ function App() {
                 depth={0.2}
                 color={"#FFFFFF"}
                 segments={90}
-                texture='src/assets/nebula.png'
+                texture={nebula1}
             />
             <Cloud
                 position={[6,-4,-25]}
@@ -147,7 +150,7 @@ function App() {
                 depth={1}
                 segments={10}
                 color={"#FFFFFF"}
-                texture='src/assets/nebula2.png'
+                texture={nebula2}
             />
             <Cloud
                 position={[6,-4,-25]}
@@ -157,7 +160,7 @@ function App() {
                 depth={1}
                 segments={100}
                 color={"#FFFFFF"}
-                texture='src/assets/nebula3.png'
+                texture={nebula3}
             />
               
           

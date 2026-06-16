@@ -6,10 +6,11 @@ import { useLoader, useFrame } from "@react-three/fiber";
 import { RGBELoader } from "three/addons/loaders/RGBELoader";
 import * as THREE from 'three'
 import aerodynamicsHdr from '../assets/aerodynamics_workshop_1k.hdr';
+import frameGltf from '../assets/Frame.gltf';
 
 
 const Frame = (props) => {
-  const { nodes, materials } = useGLTF("src/assets/Frame.gltf");
+  const { nodes, materials } = useGLTF(frameGltf);
   const [isHovered, setIsHovered] = useState(false);
   const frameGroup = useRef(null);
   const distortref = useRef()
@@ -80,5 +81,5 @@ const Frame = (props) => {
   );
 };
 
-useGLTF.preload("/Frame.gltf");
+useGLTF.preload(frameGltf);
 export default Frame;
